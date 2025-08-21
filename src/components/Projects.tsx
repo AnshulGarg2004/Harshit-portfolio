@@ -1,59 +1,71 @@
-"use client";
+// "use client";
+// import { CardStack } from "./ui/card-stack";
+// import { cn } from "@/lib/utils";
+// export function CardStackDemo() {
+//   return (
+//     <div className="h-[40rem] flex items-center justify-center w-full">
+//       <CardStack items={CARDS} />
+//     </div>
+//   );
+// }
 
-import React from "react";
-import { WobbleCard } from "./ui/wobble-card";
+// // Small utility to highlight the content of specific section of a testimonial content
+// export const Highlight = ({
+//   children,
+//   className,
+// }: {
+//   children: React.ReactNode;
+//   className?: string;
+// }) => {
+//   return (
+//     <span
+//       className={cn(
+//         "font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-700/[0.2] dark:text-emerald-500 px-1 py-0.5",
+//         className
+//       )}
+//     >
+//       {children}
+//     </span>
+//   );
+// };
 
-export function WobbleCardDemo() {
-  return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-      <WobbleCard
-        containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
-        className=""
-      >
-        <div className="max-w-xs">
-          <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Gippity AI powers the entire universe
-          </h2>
-          <p className="mt-4 text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
-          </p>
-        </div>
-        <img
-          src="/linear.webp"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-        />
-      </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[300px]">
-        <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          No shirt, no shoes, no weapons.
-        </h2>
-        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          If someone yells “stop!”, goes limp, or taps out, the fight is over.
-        </p>
-      </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="max-w-sm">
-          <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Signup for blazing-fast cutting-edge state of the art Gippity AI
-            wrapper today!
-          </h2>
-          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
-          </p>
-        </div>
-        <img
-          src="/linear.webp"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl"
-        />
-      </WobbleCard>
-    </div>
-  );
-}
+// const CARDS = [
+//   {
+//     id: 0,
+//     name: "Manu Arora",
+//     designation: "Senior Software Engineer",
+//     content: (
+//       <p>
+//         These cards are amazing, <Highlight>I want to use them</Highlight> in my
+//         project. Framer motion is a godsend ngl tbh fam 🙏
+//       </p>
+//     ),
+//   },
+//   {
+//     id: 1,
+//     name: "Elon Musk",
+//     designation: "Senior Shitposter",
+//     content: (
+//       <p>
+//         I dont like this Twitter thing,{" "}
+//         <Highlight>deleting it right away</Highlight> because yolo. Instead, I
+//         would like to call it <Highlight>X.com</Highlight> so that it can easily
+//         be confused with adult sites.
+//       </p>
+//     ),
+//   },
+//   {
+//     id: 2,
+//     name: "Tyler Durden",
+//     designation: "Manager Project Mayhem",
+//     content: (
+//       <p>
+//         The first rule of
+//         <Highlight>Fight Club</Highlight> is that you do not talk about fight
+//         club. The second rule of
+//         <Highlight>Fight club</Highlight> is that you DO NOT TALK about fight
+//         club.
+//       </p>
+//     ),
+//   },
+// ];
